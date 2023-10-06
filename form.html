@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularz z Bootstrapem</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="skrypty.js" async></script>
+</head>
+
+<body>
+
+<div class="container">
+    <form  id="form">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="name">Imię</label>
+                    <input type="text"  class="form-control" id="name" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="surname">Nazwisko</label>
+                    <input type="text" class="form-control" id="surname" name="surname">
+                </div>
+                <div class="form-group">
+                    <label for="dob">Data urodzenia</label>
+                    <input type="date" class="form-control" id="dob" name="dob">
+                </div>
+                <div class="form-group">
+                    <label for="gender">Płeć</label>
+                    <select class="form-control" id="gender" name="gender">
+                        <option value="male">Mężczyzna</option>
+                        <option value="female">Kobieta</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="children">Ilość dzieci</label>
+                    <input type="number" class="form-control" id="children" name="children">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="shoe_size">Rozmiar buta</label>
+                    <input type="number" class="form-control" id="shoe_size" name="shoe_size">
+                </div>
+                <div class="form-group">
+                    <label for="level">Poziom w Pokemon Go</label>
+                    <input type="number" class="form-control" id="level" name="level">
+                </div>
+                <div class="form-group">
+                    <label for="color">Wybór koloru</label>
+                    <select class="form-control" id="color" name="color">
+                        <option value="black">Czarny</option>
+                        <option value="white">Biały</option>
+                        <option value="red">Czerwony</option>
+                        <option value="green">Zielony</option>
+                        <option value="blue">Niebieski</option>
+                        <option value="yellow">Żółty</option>
+                        <option value="orange">Pomarańczowy</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button type="button" onclick="funkcja()" class="btn btn-primary">Wyślij</button>
+                </div>
+            </div>
+            <div id="wypluwacz">tu będzie błąd</div>
+        </div>
+    </form>
+    <script src="skrypt.js"></script>
+</div>
+
+</body>
+</html>
