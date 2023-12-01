@@ -1,0 +1,69 @@
+<html>
+  <head>
+  	<meta charset="utf-8" />
+  	<title>strona www xD</title>
+	<style>
+	
+	#guzik {
+	position:absolute;
+	}
+	</style>
+
+</head>
+  <body id="cialo">
+  <input type="text" id="tekst" readonly>
+ <button id="guzik" onmouseover="najazd()">X</button>
+	  <button id="guzik" onclick="funkcja()">X</button>
+ <div id="wypluwacz">jj</div>
+ <script>
+ function najazd() {
+ wypluwacz=document.getElementById("wypluwacz");
+ guzik=document.getElementById("guzik");
+ guzik.style.transform= "rotate("+ losuj(100)+"deg)";
+  guzik.style.marginTop = losuj(100) + "px";
+ guzik.style.marginLeft = losuj(1000) + "px";
+ guzik.style.marginRight = losuj(1000) + "px";
+
+ }
+ 
+function funkcja() {
+    tekst=document.getElementById("tekst");
+	guzik=document.getElementById("guzik");
+	cialo=document.getElementById("cialo");
+    wypluwacz=document.getElementById("wypluwacz");
+	 a =  tekst.value++;
+	wypluwacz.innerHTML  = "<img src="" ; 
+	tekst.setAttribute("value",a);
+	guzik.style.color= "#"+losuj(10)+losuj(10)+losuj(10);
+	guzik.style.transform= "rotate("+ losuj(100)+"deg)";
+	guzik.style.fontSize= losuj(100) + "px";
+	tekst.style.color= "#"+losuj(10)+losuj(10)+losuj(10);
+	tekst.style.transform= "rotate("+ losuj(100)+"deg)";
+	tekst.style.fontSize= losuj(100) + "px";
+	cialo.style.backgroundColor = "#"+losuj(10)+losuj(10)+losuj(10);
+	
+	
+    
+} 
+function losuj(loso) {
+ return Math.floor(Math.random()*loso,2);
+}
+
+function nextPrime(n) {
+  while (true) {
+    n++;
+    for ( i = 2; i <= Math.sqrt(n); i++) {
+      if (n % i === 0) {
+        break;
+      }
+    }
+    if (i > Math.sqrt(n)) {
+      return n;
+    }
+  }
+}
+
+ 
+ </script>
+  </body>
+</html>
